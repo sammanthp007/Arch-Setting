@@ -1,9 +1,21 @@
 # Arch-Setting
 My preferred setting for Arch Linux (Qtile)
 
-## synclient MaxTapTime=0
-## synclient MaxTapMove=0
+### Disable touchpad on the fly
+```
+synclient MaxTapTime=0
+synclient MaxTapMove=0 
+```
 
-## edit in  /etc/X11/xorg.conf.d/50-synaptics.conf
+### Permanently disable touchpad
+edit in  /etc/X11/xorg.conf.d/50-synaptics.conf
+```
 Option "MaxTapTime" "0"
 Option "MaxTapMove" "0"
+```
+
+### Disable TouchScreen on the fly
+```
+xinput -l
+xinput disable 10
+```
