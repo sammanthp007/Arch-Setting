@@ -19,3 +19,4 @@ Option "MaxTapMove" "0"
 xinput -l
 xinput disable 10
 ```
+### If using Qtile as your desktop environment, my configuration can be found [here](./config.py)
