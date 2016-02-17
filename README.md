@@ -1,4 +1,4 @@
-# Arch-Setting
+# My ArchLinux-Setting
 My preferred setting for Arch Linux (Qtile)
 
 ### Disable touchpad on the fly
