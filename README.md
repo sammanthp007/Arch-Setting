@@ -60,3 +60,8 @@ ping google.com
 ```
 > If success on 8.8.8.8 but failure on google.com, then check your dns. For that check your `/etc/resolv.conf` file. or if not check this [link](https://wiki.archlinux.org/index.php/Network_configuration)
 
+
+### If you ever delete `/etc/ssl/certs/ca-certificates.cert` then
+```
+pacman -S ca-certificates-utils
+```
