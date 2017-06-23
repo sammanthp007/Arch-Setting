@@ -28,9 +28,17 @@ My configuration can be found [here](./config.py)
 ```
 mount /dev/sdax /mnt
 ```
-3. Enable internet in the arch in USB
+3.1 Sent the state of the interface up
 ```
-wpa_supplicant -B -i interface -c <(wpa_passphrase MYSSID passphrase)
+ip link set <interface> up
+```
+3.2 Enable internet in the arch in USB
+```
+wpa_supplicant -B -i interface -c <(wpa_passphrase "MYSSID" "passphrase")
+```
+3.3 Enable dhcpd
+```
+dhcpcd <interface>
 ```
 4. Check if you have internet
 ```
