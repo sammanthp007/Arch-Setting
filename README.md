@@ -73,3 +73,6 @@ ping google.com
 ```
 pacman -S ca-certificates-utils
 ```
+
+> My touchpad controls (needs to be worked on) is [here](50-synaptics.conf)
+    Put it in `/etc/X11/xorg.conf.d/`
